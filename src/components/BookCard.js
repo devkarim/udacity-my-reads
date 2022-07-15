@@ -20,7 +20,6 @@ const BookCard = ({
               backgroundImage: `url("${imageUrl}")`,
             }}
           ></div>
-          {console.log((currentShelf !== 'none' && currentShelf) || '')}
           <div className="book-shelf-changer">
             <select
               value={(currentShelf !== 'none' && currentShelf) || 'none'}
