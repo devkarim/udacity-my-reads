@@ -80,7 +80,7 @@ const SearchPage = () => {
         </div>
       </div>
       <div className="search-books-results">
-        {books.length !== 0 && !emptyResults ? (
+        {books.length !== 0 && !emptyResults && query ? (
           <ol className="books-grid">
             <BooksList books={books} onChangeShelf={changeShelf} />
           </ol>

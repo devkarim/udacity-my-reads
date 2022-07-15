@@ -20,9 +20,10 @@ const BookCard = ({
               backgroundImage: `url("${imageUrl}")`,
             }}
           ></div>
+          {console.log((currentShelf !== 'none' && currentShelf) || '')}
           <div className="book-shelf-changer">
             <select
-              value={currentShelf !== 'none' && currentShelf}
+              value={(currentShelf !== 'none' && currentShelf) || 'none'}
               onChange={(e) => onChangeShelf(id, currentShelf, e.target.value)}
             >
               <option value="none" disabled>
